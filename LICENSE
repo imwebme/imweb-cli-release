@@ -1,0 +1,12 @@
+Imweb CLI Binary License
+
+Copyright (c) 2026 Imweb
+
+This license applies to official imweb CLI binaries, installer scripts, release metadata, and related files distributed from https://github.com/imwebme/imweb-cli-release.
+
+1. Permitted use. You may download, install, and run the imweb CLI for use with Imweb services and developer workflows.
+2. Restrictions. You may not copy, redistribute, resell, sublicense, host, mirror, modify, reverse engineer, decompile, disassemble, or create derivative works from the imweb CLI binaries or installer scripts, except where applicable law prohibits these restrictions or Imweb gives prior written permission.
+3. Ownership. Imweb retains all rights not expressly granted. This license does not grant rights to Imweb source code, trademarks, logos, or brand assets.
+4. Updates. The CLI may check public release metadata and install updates according to documented installer behavior.
+5. No warranty. The software is provided "as is" without warranties of any kind.
+6. Limitation of liability. To the maximum extent permitted by law, Imweb is not liable for damages arising from use of the software.
