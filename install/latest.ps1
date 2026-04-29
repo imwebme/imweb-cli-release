@@ -47,6 +47,7 @@ function Fail([string]$Message) {
 function Get-PlatformKey {
     switch ([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture.ToString().ToLowerInvariant()) {
         'x64' { $arch = 'x86_64' }
+        'x86' { $arch = 'i686' }
         'arm64' { $arch = 'arm64' }
         default { Fail '지원하지 않는 아키텍처입니다.' }
     }

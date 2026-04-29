@@ -53,7 +53,9 @@ detect_platform() {
 
   case "$arch" in
     x86_64|amd64) arch="x86_64" ;;
+    i386|i486|i586|i686) arch="i686" ;;
     arm64|aarch64) arch="arm64" ;;
+    armv7l|armv7*) arch="armv7" ;;
     *)
       fail "지원하지 않는 아키텍처입니다: $arch"
       ;;
