@@ -7,6 +7,15 @@
 此仓库包含公开 release asset、channel pointer，以及官方 installer entrypoint（macOS/Linux 使用 `install/latest.sh`，Windows 使用 `install/latest.ps1`）。
 此仓库不包含 CLI 源代码。
 
+## 什么是 imweb-cli？
+
+`imweb-cli` 是面向 Imweb 客户的官方命令行应用，用于在 terminal、script 和自动化工具中使用 Imweb OpenAPI。
+
+- 认证使用 Imweb OAuth 和 Imweb app installation consent flow。
+- runtime API call 仅限公开 Imweb OpenAPI specification 中定义的 endpoint。
+- CLI 功能不会 scraping admin page，也不会使用 private/internal API。
+- production 和 test environment 会根据 Imweb site/API host 与 OAuth configuration 分离。
+
 ## 安装
 
 - macOS/Linux: `https://raw.githubusercontent.com/imwebme/imweb-cli-release/main/install/latest.sh`

@@ -7,6 +7,15 @@
 이 저장소에는 공개 release asset, channel pointer, 공식 installer entrypoint(`install/latest.sh`: macOS/Linux, `install/latest.ps1`: Windows)가 들어 있습니다.
 CLI 소스 코드는 포함하지 않습니다.
 
+## imweb-cli란?
+
+`imweb-cli`는 아임웹 고객사가 터미널, 스크립트, 자동화 도구에서 아임웹 OpenAPI를 사용할 수 있게 하는 공식 CLI 앱입니다.
+
+- 인증은 아임웹 OAuth와 아임웹 앱 설치 동의 절차를 사용합니다.
+- 런타임 API 호출은 공개 아임웹 OpenAPI 스펙에 정의된 endpoint만 사용합니다.
+- CLI 기능 구현을 위해 관리자 화면을 scraping하거나 비공개/internal API를 사용하지 않습니다.
+- 프로덕션과 테스트 환경은 아임웹 사이트/API host와 OAuth 설정 기준으로 분리됩니다.
+
 ## 설치
 
 - macOS/Linux: `https://raw.githubusercontent.com/imwebme/imweb-cli-release/main/install/latest.sh`

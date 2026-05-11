@@ -7,6 +7,15 @@
 このリポジトリには、公開 release asset、channel pointer、公式 installer entrypoint（macOS/Linux は `install/latest.sh`、Windows は `install/latest.ps1`）が含まれます。
 CLI のソースコードは含まれません。
 
+## imweb-cli とは
+
+`imweb-cli` は、Imweb のお客様が terminal、script、自動化ツールから Imweb OpenAPI を利用するための公式 CLI アプリです。
+
+- 認証には Imweb OAuth と Imweb app installation consent flow を使用します。
+- runtime API call は、公開 Imweb OpenAPI specification に定義された endpoint のみに限定されます。
+- CLI 機能のために admin page を scraping したり、private/internal API を使用したりしません。
+- production と test environment は、Imweb site/API host と OAuth configuration によって分離されます。
+
 ## インストール
 
 - macOS/Linux: `https://raw.githubusercontent.com/imwebme/imweb-cli-release/main/install/latest.sh`

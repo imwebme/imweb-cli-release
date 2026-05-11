@@ -7,6 +7,15 @@ Public binary distribution repo for `imweb-cli`.
 This repository contains public release assets, channel pointers, and the canonical installer entrypoint (`install/latest.sh` for macOS/Linux, `install/latest.ps1` for Windows).
 It does not contain CLI source code.
 
+## What is imweb-cli?
+
+`imweb-cli` is the official command-line app for Imweb customers to use Imweb OpenAPI from terminals, scripts, and automation tools.
+
+- It authenticates through Imweb OAuth and the Imweb app installation consent flow.
+- Runtime API calls are limited to endpoints defined in the public Imweb OpenAPI specification.
+- It does not scrape admin pages or use private/internal APIs for CLI features.
+- Production and test environments are separated by Imweb site/API hosts and OAuth configuration.
+
 ## Install
 
 - macOS/Linux: `https://raw.githubusercontent.com/imwebme/imweb-cli-release/main/install/latest.sh`
